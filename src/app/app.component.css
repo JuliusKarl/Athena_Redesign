@@ -1,0 +1,155 @@
+.top-menu{
+  border-top: 4px  solid #fff;
+  background: #ffffff;
+  padding: 0px 15px;
+  width: 100vw;
+  height: 100px;
+}
+
+.top-menu.dev{
+  border-color: #4BB543;
+}
+.top-menu.tst{
+  border-color: #f0ad4e;
+}
+.top-menu.prd{
+  border-color: #CE0000;
+}
+
+.env-indicator{
+  position: absolute;
+  top: 2px;
+  right: 0px;
+  font-size: 0.5rem;
+  line-height: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 2px 15px;
+  border-bottom-left-radius: 15px;
+}
+.env-indicator.dev{
+  background-color: #4BB543;
+}
+.env-indicator.tst{
+  background-color: #f0ad4e;
+}
+.env-indicator.prd{
+  background-color: #CE0000;
+}
+
+.brand{
+  color: #97bcdd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brand a, .brand a:hover, .brand a:focus, .brand a:active{
+  background: transparent;
+  text-decoration: none;
+  color: #fff!important;
+}
+.brand .mat-icon{
+  display: flex;
+  margin: auto;
+  width: 50px;
+  height: auto;
+}
+.menu{
+  display: flex;
+  padding-right: 0;
+}
+.menu a{
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: flex;
+  margin: 0px 0px 0px 60px;
+  padding: 13px 0px;
+  text-decoration: none;
+  color: #00467F;
+  transition: background 0.1s  ease-in-out;
+}
+.menu a:hover,.menu a:focus,.menu a.active, menu a:active{
+  color: #00467F !important;
+  background: none;
+}
+.mobile-warning{
+  text-align: center;
+  z-index: 2;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.9);
+  color: rgb(74, 76, 76);
+}
+.mobile-warning img{
+  text-decoration: none;
+  margin-top: 20vh;
+  width: 50vw;
+  height: 20vh;
+}
+
+.floater{
+  display: flex;
+  margin: auto;
+  border-radius: 50px;
+  position: fixed;
+  z-index: 1;
+  bottom: 30px;
+  right:-185px;
+  padding: 10px;
+  background: #3b5998;
+  color: #fff;
+  opacity: 0.3;
+  transition: right 0.1s ease-in-out;
+  cursor: pointer;
+}
+.floater:hover{
+  opacity: 1;
+  right:0px;
+  transition: right 0.5s ease-in-out;
+}
+.floater a, .floater a:hover, .floater a:active, .floater a:visited{
+  text-decoration: none;
+  color: #fff;
+}
+
+.user-info{
+  display: flex;
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin: auto;
+  cursor: pointer;
+}
+.user-info .mat-icon{
+  display: flex;
+  margin: auto 3px auto auto;
+}
+
+/* Underline Animation */
+.main_underline
+{
+    position: relative;
+}
+
+.main_underline:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 15px;
+  left: 0;
+  background-color: #00467F;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+a.main_underline:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .menu a {
+    display: none;
+  }
+}
